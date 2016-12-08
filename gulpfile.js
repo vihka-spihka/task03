@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
 	return gulp.src('app/sass/*.scss')
 	.pipe(sass())
-	.pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], {cascade: true}))
+	.pipe(autoprefixer(['Chrome >= 51', 'Opera >= 39', 'Firefox >= 47', 'last 1 Android versions', 'last 1 Safari versions', 'ie 10+'], {cascade: true}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
 });
@@ -25,7 +25,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/bootstrap/dist/js/bootstrap.min.js'
+		'app/libs/bootstrap-sass/assets/javascripts/bootstrap.js'
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())

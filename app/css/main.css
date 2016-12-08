@@ -1,12 +1,142 @@
+.upperText, h2, .dateStyle {
+  text-transform: uppercase; }
+
 h2 {
-  text-transform: uppercase;
-  color: #515d70; }
+  font-size: 1.6em;
+  font-family: Verdana;
+  color: #515e72;
+  padding-bottom: 2%; }
+
+.underlined:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ebebeb;
+  margin-top: 5px;
+  width: 60px; }
+
+h3 {
+  font-size: 1.3em;
+  color: #515e72; }
+
+.dateStyle {
+  font-size: 0.8em; }
+
+p {
+  font-family: Verdana;
+  color: #515e72; }
 
 a, a:visited {
   color: #1594d4;
   text-decoration: none; }
 
-ul {
+.infoBlock {
+  margin-top: 5%; }
+
+#rotatedMonster {
+  display: inline-block; }
+  #rotatedMonster:hover {
+    -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-transition: 1500ms;
+    transition: 1500ms; }
+
+.separator {
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px; }
+  .separator:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: #ebebeb;
+    position: relative;
+    margin-left: -100%;
+    left: -10px; }
+  .separator:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: #ebebeb;
+    position: relative;
+    margin-right: -100%;
+    right: -10px; }
+
+.linksList {
   list-style-type: none;
   margin-left: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  color: #515e72; }
+
+.experienceList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #515e72; }
+  .experienceList__item h3 {
+    color: #3d9ccc;
+    font-weight: 700; }
+  .experienceList__item--separate h3 {
+    color: #96c73c; }
+
+.skillsList--rounded {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #515e72; }
+
+.skillsList--linear {
+  display: inline-block; }
+
+.skillsList__item {
+  color: #515e72; }
+
+.toolsList {
+  list-style-type: none; }
+  .toolsList__progressBar {
+    font-size: 1.3em;
+    color: white;
+    background-color: #eff2f5;
+    margin-bottom: 10px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+
+.projectsList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #515e72; }
+
+.thumbnail {
+  border: none; }
+
+.interestsList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #515e72; }
+  .interestsList img {
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+
+.infoblock-footer {
+  margin-bottom: 5%; }
+
+.infoblock-footer h2 {
+  font-family: Verdana;
+  font-style: italic; }
+
+.underlined__footer:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ebebeb;
+  margin-top: 5px;
+  width: 10%;
+  text-align: center;
+  margin-left: 45%; }

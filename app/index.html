@@ -20,105 +20,249 @@
 	<![endif]-->
 </head>
 <body>
-	<main class="container">
-		<div class="row">
-			<section class="col-xl-2">
-				<h1><img class="img-responsive" src="img/avatar.png" alt="Avatar"></h1>
-			</section>
-			<div class="col-xl-6">
-				<div class="row">
-					<section class="col-xs-12">
-						<h2>Обо мне</h2>
-						<p>Привет! Меня зовут Иван Белобородов. Я родился и вырос в Ижевске, столице Удмуртской Республики. Последние несколько лет занимаюсь проектированием и дизайном мобильных приложений на базе iOS и Android. В данный момент живу в Москве и ищу постоянное место работы.</p>
-						<p>Испытываю страсть к девайсам, имеющим touch-интерфейс, классическим мотоциклам, немецкому пиву, английской музыке и французскому кино.</p>
+	<div class="container">
+		<main>
+			<div class="row">
+				<section class="col-md-2 infoBlock infoBlock-title">
+					<h1><img class="img-responsive" src="img/avatar.png" alt="Avatar"></h1>
+				</section>
+				<div class="col-md-6 infoBlock">
+					<section class="row infoBlock-aboutMe">
+						<div class="col-xs-12">
+							<h2>Обо мне</h2>
+							<p>Привет! Меня зовут Иван Белобородов. Я родился и вырос в Ижевске, столице Удмуртской Республики. Последние несколько лет занимаюсь проектированием и дизайном мобильных приложений на базе iOS и Android. В данный момент живу в Москве и ищу постоянное место работы.</p>
+							<p>Испытываю страсть к девайсам, имеющим touch-интерфейс, классическим мотоциклам, немецкому пиву, английской музыке и французскому кино.</p>
+						</div>
+					</section>
+					<div class="row infoBlock infoBlock-separator">
+						<div class="col-md-8 col-md-offset-2 separator">
+							<img id="rotatedMonster" class="img-responsive" src="img/separator.png" alt="Крутящийся монстр">
+						</div>
+					</div>
+					<section class="row infoBlock infoBlock-links">
+						<div class="col-xs-12">
+							<ul class="linksList">
+								<li class="linksList__item">
+									<a href="http://beliv.net" class="linksList__item--anchor" title="Go to http://beliv.net">beliv.net</a>
+								</li>
+								<li class="linksList__item">
+									<a href="https://ru-ru.facebook.com/ivan.beloborodov" title="Go to https://ru-ru.facebook.com/ivan.beloborodov">ivan.beloborodov</a>
+								</li>
+								<li class="linksList__item">
+									<a href="https://twitter.com/@beliv" title="Go to https://twitter.com/@beliv">@beliv</a>
+								</li>
+								<li class="linksList__item">
+									<a href="http://dribbble.com/beliv" title="Go to http://dribbble.com/beliv">dribbble.com/beliv</a>
+								</li>
+								<li class="linksList__item">
+									<a href="http://revision.ru/a/beliv" title="Go to http://revision.ru/a/beliv">revision.ru/a/beliv</a>
+								</li>
+							</ul>
+						</div>
 					</section>
 				</div>
-				<div class="row">
-					<section class="col-xs-12">
-						<ul>
-							<li>
-								<a href="http://beliv.net" title="Go to http://beliv.net">beliv.net</a>
+				<section class="col-md-4 infoBlock infoBlock-experience">
+					<h2>Опыт работы</h2>
+					<ul class="experienceList">
+						<li class="experienceList__item">
+							<h3>
+								Центр Высоких Технологий
+							</h3>
+								<p>
+									UX Дизайнер
+								</p>
+								<p class="dateStyle">
+									январь 2011 - июль 2013
+								</p>
+						</li>
+						<li class="experienceList__item">
+							<h3>
+								ООО "БИТ-Мастер"
+							</h3>
+								<p>
+									Дизайнер мобильных интерфейсов
+								</p>
+								<p class="dateStyle">
+									август 2012 - июнь 2013 (внештатно)
+								</p>
+						</li>
+						<li class="experienceList__item">
+							<h3>
+								Fastdev
+							</h3>
+								<p>
+									Дизайнер мобильных интерфейсов
+								</p>
+								<p class="dateStyle">
+									апрель 2012 - июнь 2012 (внештатно)
+								</p>
+						</li>
+						<li class="experienceList__item">
+							<h3>
+								ООО "Танго Телеком"
+							</h3>
+								<p>
+									Дизайнер веб и мобильных интерфейсов
+								</p>
+								<p class="dateStyle">
+									сентябрь 2010 - январь 2011 (внештатно)
+								</p>
+						</li>
+						<li class="experienceList__item experienceList__item--separate">
+							<h3>
+								Фрилансер
+							</h3>
+								<p>
+									Веб-дизайнер
+								</p>
+								<p class="dateStyle">
+									март 2009 - январь 2011
+								</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<section class="row infoBlock infoBlock-skills">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="underlined">Навыки</h2>
+						</div>
+					</div>
+					<ul class="row skillsList--rounded">
+						<li class=" col-md-3 col-md-offset-1 skillsList__item">
+							<h3 class="text-center">User Experience</h3>
+							<p class="dateStyle text-center">с 2010 года</p>
+						</li>
+						<li class="col-md-5 skillsList__item">
+							<h3 class="text-center">Дизайн мобильных интерфейсов</h3>
+							<p class="dateStyle text-center">с 2011 года</p>
+						</li>
+						<li class="col-md-3 skillsList__item">
+							<h3 class="text-center">Веб-интерфейсы</h3>
+							<p class="dateStyle text-center">с 2010 года</p>
+						</li>
+					</ul>
+					<ul class="row skillsList-linear">
+						<div class="col-md-3">
+							<li class="skillsList__item">Базовые знания HTML &amp; CSS</li>
+						</div>
+						<div class="col-md-3">
+							<li class="skillsList__item">Клубный фотограф</li>
+						</div>
+						<div class="col-md-3">
+							<li class="skillsList__item">Интерфейсы для Smart TV</li>
+						</div>
+						<div class="col-md-3">
+							<li class="skillsList__item">7 проектов в сыере такси за 3 года</li>
+						</div>
+					</ul>
+				</div>
+			</section>
+			<section class="row infoBlock infoBlock-tools">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="underlined">Инструменты</h2>
+						</div>
+					</div>
+					<div class="row">
+						<ul class="col-md-7 toolsList">
+							<li class="row">
+								<div class="col-xs-12 toolsList__progressBar">Photoshop</div>
 							</li>
-							<li>
-								<a href="https://ru-ru.facebook.com/ivan.beloborodov" title="Go to https://ru-ru.facebook.com/ivan.beloborodov">ivan.beloborodov</a>
+							<li class="row">
+								<div class="col-xs-12 toolsList__progressBar">Illustrator</div>
 							</li>
-							<li>
-								<a href="https://twitter.com/@beliv" title="Go to https://twitter.com/@beliv">@beliv</a>
+							<li class="row">
+								<div class="col-xs-12 toolsList__progressBar">Indesign</div>
 							</li>
-							<li>
-								<a href="http://dribbble.com/beliv" title="Go to http://dribbble.com/beliv">dribbble.com/beliv</a>
+							<li class="row">
+								<div class="col-xs-12 toolsList__progressBar">Scetch</div>
 							</li>
-							<li>
-								<a href="http://revision.ru/a/beliv" title="Go to http://revision.ru/a/beliv">revision.ru/a/beliv</a>
+							<li class="row">
+								<div class="col-xs-12 toolsList__progressBar">Axure</div>
 							</li>
 						</ul>
-					</section>
+						<div class="col-md-5 activityList">Активность</div>
+					</div>
+				</div>
+			</section>
+			<section class="row infoBlock infoBlock-projects">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="underlined">Последние проекты</h2>
+						</div>
+					</div>
+					<ul class="row projectsList">
+						<li class="col-md-3 projectsList__item thumbnail">
+							<div class="caption">
+								<h3 class="text-center">TaxiCaller</h3>
+								<p class="dateStyle text-center">декабрь 2012 - март 2013</p>
+							</div>
+							<img class="img-responsive" src="img/projects_taxiCaller.png" alt="Проект TaxiCaller">
+						</li>
+						<li class="col-md-3 projectsList__item thumbnail">
+							<div class="caption">
+								<h3 class="text-center">Check, please!</h3>
+								<p class="dateStyle text-center">май 2013 - ...</p>
+							</div>
+							<img class="img-responsive" src="img/projects_checkPlease.png" alt="Проект Check, please!">
+						</li>
+						<li class="col-md-3 projectsList__item thumbnail">
+							<div class="caption">
+								<h3 class="text-center">Izhevsk.ru</h3>
+								<p class="dateStyle text-center">ноябрь 2012 - февраль 2013</p>
+							</div>
+							<img class="img-responsive" src="img/projects_izhevsk.png" alt="Проект Izhevsk.ru">
+						</li>
+						<li class="col-md-3 projectsList__item thumbnail">
+							<div class="caption">
+								<h3 class="text-center">RP.com</h3>
+								<p class="dateStyle text-center">июнь 2012 - март 2013</p>
+							</div>
+							<img class="img-responsive" src="img/projects_russianPlaces.png" alt="Проект RP.com">
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="row infoBlock infoBlock-interests">
+				<div class="col-md-12">
+					<div class="row">
+						<h2 class="underlined">Интересы</h2>
+					</div>
+					<ul class="row interestsList">
+						<li class="col-md-3 interestsList__item">
+							<div class="interestsList__caption">Музыка</div>
+							<img class="img-respinsive interestsList__img" src="img/interests_music.jpg" alt="Музыка">
+						</li>
+						<li class="col-md-3 interestsList__item">
+							<div class="interestsList__caption">Мотоциклы</div>
+							<img class="img-respinsive interestsList__img" src="img/interests_motorbike.jpg" alt="Мотоцикл">
+						</li>
+						<li class="col-md-3 interestsList__item">
+							<div class="interestsList__caption">Кулинария</div>
+							<img class="img-respinsive interestsList__img" src="img/interests_cookery.jpg" alt="Кулинария">
+						</li>
+						<li class="col-md-3 interestsList__item">
+							<div class="interestsList__caption">Велоспорт</div>
+							<img class="img-respinsive interestsList__img" src="img/interests_bicycle.jpg" alt="Велосипед">
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class = "row infoBlock infoblock-footer">
+				<div class="col-md-12">
+					<h2 class="text-center underlined__footer">That`s all, folks!</h2>
+					<img class="img-responsive center-block" src="img/footer_BillMurray.png">
 				</div>
 			</div>
-			<section class="col-xl-4">
-				<h2>Опыт работы</h2>
-				<ul>
-					<li>
-						<h3>
-							Центр Высоких Технологий
-						</h3>
-							<p>
-								UX Дизайнер
-							</p>
-							<p>
-								январь 2011 - июль 2013
-							</p>
-					</li>
-					<li>
-						<h3>
-							ООО "БИТ-Мастер"
-						</h3>
-							<p>
-								Дизайнер мобильных интерфейсов
-							</p>
-							<p>
-								август 2012 - июнь 2013 (внештатно)
-							</p>
-					</li>
-					<li>
-						<h3>
-							Fastdev
-						</h3>
-							<p>
-								Дизайнер мобильных интерфейсов
-							</p>
-							<p>
-								апрель 2012 - июнь 2012 (внештатно)
-							</p>
-					</li>
-					<li>
-						<h3>
-							ООО "Танго Телеком"
-						</h3>
-							<p>
-								Дизайнер веб и мобильных интерфейсов
-							</p>
-							<p>
-								сентябрь 2010 - январь 2011 (внештатно)
-							</p>
-					</li>
-					<li>
-						<h3>
-							Фрилансер
-						</h3>
-							<p>
-								Веб-дизайнер
-							</p>
-							<p>
-								март 2009 - январь 2011
-							</p>
-					</li>
-				</ul>
-			</section>
-		</div>
-	</main>
+		</footer>
+	</div>
 
 	<script src="js/libs.min.js"></script>
-	
 </body>
 </html>
