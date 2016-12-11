@@ -20,28 +20,28 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="siteBody">
 		<main>
 			<div class="row">
-				<section class="col-md-2 infoBlock infoBlock-title">
+				<section class="col-xs-12 col-md-2 infoBlock infoBlock-title">
 					<h1><img class="img-responsive" src="img/avatar.png" alt="Avatar"></h1>
 				</section>
-				<div class="col-md-6 infoBlock">
+				<div class="col-xs-12 col-md-6 infoBlock">
 					<section class="row infoBlock-aboutMe">
 						<div class="col-xs-12">
-							<h2>Обо мне</h2>
+							<h2 class="infoBlock__title">Обо мне</h2>
 							<p>Привет! Меня зовут Иван Белобородов. Я родился и вырос в Ижевске, столице Удмуртской Республики. Последние несколько лет занимаюсь проектированием и дизайном мобильных приложений на базе iOS и Android. В данный момент живу в Москве и ищу постоянное место работы.</p>
 							<p>Испытываю страсть к девайсам, имеющим touch-интерфейс, классическим мотоциклам, немецкому пиву, английской музыке и французскому кино.</p>
 						</div>
 					</section>
 					<div class="row infoBlock infoBlock-separator">
-						<div class="col-md-8 col-md-offset-2 separator">
-							<img id="rotatedMonster" class="img-responsive" src="img/separator.png" alt="Крутящийся монстр">
+						<div class="col-xs-12 col-md-8 col-md-offset-2 infoBlock-separator__separator">
+							<img class="img-responsive separator__img--rotated" src="img/separator.png" alt="Крутящийся монстр">
 						</div>
 					</div>
 					<section class="row infoBlock infoBlock-links">
 						<div class="col-xs-12">
-							<ul class="linksList">
+							<ul class="infoBlock-links__linksList">
 								<li class="linksList__item">
 									<a href="http://beliv.net" class="linksList__item--anchor" title="Go to http://beliv.net">beliv.net</a>
 								</li>
@@ -62,62 +62,62 @@
 					</section>
 				</div>
 				<section class="col-md-4 infoBlock infoBlock-experience">
-					<h2>Опыт работы</h2>
-					<ul class="experienceList">
+					<h2 class="infoBlock__title">Опыт работы</h2>
+					<ul class="infoBlock-experience__experienceList">
 						<li class="experienceList__item">
-							<h3>
+							<h3 class="infoBlock__subtitle">
 								Центр Высоких Технологий
 							</h3>
-								<p>
-									UX Дизайнер
-								</p>
-								<p class="dateStyle">
-									январь 2011 - июль 2013
-								</p>
+							<p>
+								UX Дизайнер
+							</p>
+							<p class="dateStyle">
+								январь 2011 - июль 2013
+							</p>
 						</li>
 						<li class="experienceList__item">
-							<h3>
+							<h3 class="infoBlock__subtitle">
 								ООО "БИТ-Мастер"
 							</h3>
-								<p>
-									Дизайнер мобильных интерфейсов
-								</p>
-								<p class="dateStyle">
-									август 2012 - июнь 2013 (внештатно)
-								</p>
+							<p>
+								Дизайнер мобильных интерфейсов
+							</p>
+							<p class="dateStyle">
+								август 2012 - июнь 2013 (внештатно)
+							</p>
 						</li>
 						<li class="experienceList__item">
-							<h3>
+							<h3 class="infoBlock__subtitle">
 								Fastdev
 							</h3>
-								<p>
-									Дизайнер мобильных интерфейсов
-								</p>
-								<p class="dateStyle">
-									апрель 2012 - июнь 2012 (внештатно)
-								</p>
+							<p>
+								Дизайнер мобильных интерфейсов
+							</p>
+							<p class="dateStyle">
+								апрель 2012 - июнь 2012 (внештатно)
+							</p>
 						</li>
 						<li class="experienceList__item">
-							<h3>
+							<h3 class="infoBlock__subtitle">
 								ООО "Танго Телеком"
 							</h3>
-								<p>
-									Дизайнер веб и мобильных интерфейсов
-								</p>
-								<p class="dateStyle">
-									сентябрь 2010 - январь 2011 (внештатно)
-								</p>
+							<p>
+								Дизайнер веб и мобильных интерфейсов
+							</p>
+							<p class="dateStyle">
+								сентябрь 2010 - январь 2011 (внештатно)
+							</p>
 						</li>
 						<li class="experienceList__item experienceList__item--separate">
-							<h3>
+							<h3 class="infoBlock__subtitle">
 								Фрилансер
 							</h3>
-								<p>
-									Веб-дизайнер
-								</p>
-								<p class="dateStyle">
-									март 2009 - январь 2011
-								</p>
+							<p>
+								Веб-дизайнер
+							</p>
+							<p class="dateStyle">
+								март 2009 - январь 2011
+							</p>
 						</li>
 					</ul>
 				</section>
@@ -126,24 +126,26 @@
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="underlined">Навыки</h2>
+							<h2 class="infoBlock__title underlined">Навыки</h2>
 						</div>
 					</div>
-					<ul class="row skillsList--rounded">
+					<ul class="row infoBlock-skills__skillsList--rounded">
 						<li class=" col-md-3 col-md-offset-1 skillsList__item">
-							<h3 class="text-center">User Experience</h3>
+							<h3 class="infoBlock__subtitle text-center">User Experience</h3>
 							<p class="dateStyle text-center">с 2010 года</p>
+							<div style="width:200px;display:inline;&quot;"><canvas width="200" height="200"><input class="knob" data-fgcolor="chartreuse" data-thickness=".4" data-readonly="true" value="22" readonly="readonly" style="width: 100px; position: absolute; margin-top: 71.4286px; margin-left: -150px; font-size: 50px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: chartreuse; padding: 0px; -webkit-appearance: none;"></div>
+							</canvas>
 						</li>
 						<li class="col-md-5 skillsList__item">
-							<h3 class="text-center">Дизайн мобильных интерфейсов</h3>
+							<h3 class="infoBlock__subtitle text-center">Дизайн мобильных интерфейсов</h3>
 							<p class="dateStyle text-center">с 2011 года</p>
 						</li>
 						<li class="col-md-3 skillsList__item">
-							<h3 class="text-center">Веб-интерфейсы</h3>
+							<h3 class="infoBlock__subtitle text-center">Веб-интерфейсы</h3>
 							<p class="dateStyle text-center">с 2010 года</p>
 						</li>
 					</ul>
-					<ul class="row skillsList-linear">
+					<ul class="row infoBlock-skills__skillsList-linear">
 						<div class="col-md-3">
 							<li class="skillsList__item">Базовые знания HTML &amp; CSS</li>
 						</div>
@@ -159,67 +161,119 @@
 					</ul>
 				</div>
 			</section>
+
 			<section class="row infoBlock infoBlock-tools">
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="underlined">Инструменты</h2>
+							<h2 class="infoBlock__title underlined">Инструменты</h2>
 						</div>
 					</div>
+					
 					<div class="row">
-						<ul class="col-md-7 toolsList">
-							<li class="row">
-								<div class="col-xs-12 toolsList__progressBar">Photoshop</div>
-							</li>
-							<li class="row">
-								<div class="col-xs-12 toolsList__progressBar">Illustrator</div>
-							</li>
-							<li class="row">
-								<div class="col-xs-12 toolsList__progressBar">Indesign</div>
-							</li>
-							<li class="row">
-								<div class="col-xs-12 toolsList__progressBar">Scetch</div>
-							</li>
-							<li class="row">
-								<div class="col-xs-12 toolsList__progressBar">Axure</div>
-							</li>
-						</ul>
-						<div class="col-md-5 activityList">Активность</div>
+						<div class="col-md-7">
+							<ul class="infoBlock-tools__programList">
+								<li class="row">
+									<div class="col-xs-12 programList__progressBar">
+										<div class="programList__progressBar--blue">
+											<span class="progressBar__caption upperText">Photoshop</span>
+										</div>
+									</div>
+								</li>
+								<li class="row">
+									<div class="col-xs-12 programList__progressBar">
+										<div class="programList__progressBar--green">
+											<span class="progressBar__caption upperText">Illustrator</span>
+										</div>
+									</div>
+								</li>
+								<li class="row">
+									<div class="col-xs-12 programList__progressBar">
+										<div class="programList__progressBar--purple">
+											<span class="progressBar__caption upperText">Indesign</span>
+										</div>
+									</div>
+								</li>
+								<li class="row">
+									<div class="col-xs-12 programList__progressBar">
+										<div class="programList__progressBar--seaColor">
+											<span class="progressBar__caption upperText">Scetch</span>
+										</div>
+									</div>
+								</li>
+								<li class="row">
+									<div class="col-xs-12 programList__progressBar">
+										<div class="programList__progressBar--orange">
+											<span class="progressBar__caption upperText">Axure</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-5 infoBlock-tools__activityList">
+							<div class="activityList__title text-right">Активность</div>
+							<ul class="infoBlock-tools__activityList--bordered">
+								<li class="row activityList__item">
+									<div class="col-xs-7">Balsamiq Mockups</div>
+									<div class="col-xs-5 dateStyle text-right">август 2013</div>
+								</li>
+								<li class="row activityList__item">
+									<div class="col-xs-7">Diablo III</div>
+									<div class="col-xs-5 dateStyle text-right">29 сентября</div>
+								</li>
+								<li class="row activityList__item">
+									<div class="col-xs-7">iA Writer</div>
+									<div class="col-xs-5 dateStyle text-right">позавчера</div>
+								</li>
+								<li class="row activityList__item">
+									<div class="col-xs-7">Lightroom 4</div>
+									<div class="col-xs-5 dateStyle text-right">сентябрь 2013</div>
+								</li>
+								<li class="row activityList__item">
+									<div class="col-xs-7">Skala Preview &amp; View</div>
+									<div class="col-xs-5 dateStyle text-right">вчера</div>
+								</li>
+								<li class="row activityList__item">
+									<div class="col-xs-7">Xcode</div>
+									<div class="col-xs-5 dateStyle text-right">май 2013</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="row infoBlock infoBlock-projects">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-12">
-							<h2 class="underlined">Последние проекты</h2>
-						</div>
+						<h2 class="col-md-12 infoBlock__title underlined">Последние проекты</h2>
 					</div>
-					<ul class="row projectsList">
+					<ul class="row infoBlock-projects__projectsList">
 						<li class="col-md-3 projectsList__item thumbnail">
 							<div class="caption">
-								<h3 class="text-center">TaxiCaller</h3>
+								<h3 class="infoBlock__subtitle text-center">TaxiCaller</h3>
 								<p class="dateStyle text-center">декабрь 2012 - март 2013</p>
 							</div>
 							<img class="img-responsive" src="img/projects_taxiCaller.png" alt="Проект TaxiCaller">
 						</li>
 						<li class="col-md-3 projectsList__item thumbnail">
 							<div class="caption">
-								<h3 class="text-center">Check, please!</h3>
+								<h3 class="infoBlock__subtitle text-center">Check, please!</h3>
 								<p class="dateStyle text-center">май 2013 - ...</p>
 							</div>
 							<img class="img-responsive" src="img/projects_checkPlease.png" alt="Проект Check, please!">
 						</li>
 						<li class="col-md-3 projectsList__item thumbnail">
 							<div class="caption">
-								<h3 class="text-center">Izhevsk.ru</h3>
+								<h3 class="infoBlock__subtitle text-center">Izhevsk.ru</h3>
 								<p class="dateStyle text-center">ноябрь 2012 - февраль 2013</p>
 							</div>
 							<img class="img-responsive" src="img/projects_izhevsk.png" alt="Проект Izhevsk.ru">
 						</li>
 						<li class="col-md-3 projectsList__item thumbnail">
 							<div class="caption">
-								<h3 class="text-center">RP.com</h3>
+								<h3 class="infoBlock__subtitle text-center">RP.com <img src="img/scull.png" alt="Dead project"></h3>
 								<p class="dateStyle text-center">июнь 2012 - март 2013</p>
 							</div>
 							<img class="img-responsive" src="img/projects_russianPlaces.png" alt="Проект RP.com">
@@ -230,9 +284,9 @@
 			<section class="row infoBlock infoBlock-interests">
 				<div class="col-md-12">
 					<div class="row">
-						<h2 class="underlined">Интересы</h2>
+						<h2 class="col-md-12 infoBlock__title underlined">Интересы</h2>
 					</div>
-					<ul class="row interestsList">
+					<ul class="row infoBlock-interests__interestsList">
 						<li class="col-md-3 interestsList__item">
 							<div class="interestsList__caption">Музыка</div>
 							<img class="img-respinsive interestsList__img" src="img/interests_music.jpg" alt="Музыка">
@@ -254,15 +308,14 @@
 			</section>
 		</main>
 		<footer>
-			<div class = "row infoBlock infoblock-footer">
+			<div class = "row infoBlock infoBlock-footer">
 				<div class="col-md-12">
-					<h2 class="text-center underlined__footer">That`s all, folks!</h2>
+					<h2 class="text-center infoBlock-footer--underlined">That's all, folks!</h2>
 					<img class="img-responsive center-block" src="img/footer_BillMurray.png">
 				</div>
 			</div>
 		</footer>
 	</div>
-
 	<script src="js/libs.min.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
 	return gulp.src('app/sass/*.scss')
 	.pipe(sass())
-	.pipe(autoprefixer(['Chrome >= 51', 'Opera >= 39', 'Firefox >= 47', 'last 1 Android versions', 'last 1 Safari versions', 'ie 10+'], {cascade: true}))
+	.pipe(autoprefixer(['Chrome >= 51', 'Opera >= 39', 'Firefox >= 47', 'last 1 Android versions', 'last 1 Safari versions', 'ie >= 10'], {cascade: true}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
 });

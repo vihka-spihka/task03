@@ -1,11 +1,21 @@
-.upperText, h2, .dateStyle {
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans);
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans-narrow);
+.upperText, .infoBlock__title, .dateStyle, .progressBar__caption, .activityList__title {
   text-transform: uppercase; }
 
-h2 {
+.infoBlock {
+  margin-top: 4%; }
+
+.infoBlock__title {
   font-size: 1.6em;
-  font-family: Verdana;
+  font-family: 'PT Sans Narrow', Arial;
   color: #515e72;
   padding-bottom: 2%; }
+
+.infoBlock__subtitle {
+  font-size: 1.3em;
+  font-family: 'PT Sans', Arial;
+  color: #515e72; }
 
 .underlined:after {
   content: "";
@@ -15,38 +25,38 @@ h2 {
   margin-top: 5px;
   width: 60px; }
 
-h3 {
-  font-size: 1.3em;
-  color: #515e72; }
-
 .dateStyle {
   font-size: 0.8em; }
 
 p {
-  font-family: Verdana;
+  font-family: 'PT Sans', Arial;
+  font-size: 1.0em;
   color: #515e72; }
 
-a, a:visited {
+.linksList__item a {
   color: #1594d4;
   text-decoration: none; }
+  .linksList__item a:visited {
+    color: #1594d4; }
+  .linksList__item a:hover {
+    color: blue; }
 
-.infoBlock {
-  margin-top: 5%; }
-
-#rotatedMonster {
+.separator__img--rotated {
   display: inline-block; }
-  #rotatedMonster:hover {
-    -webkit-transform: rotate(-360deg);
-        -ms-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-    -webkit-transition: 1500ms;
-    transition: 1500ms; }
+  .separator__img--rotated:hover {
+    animation: rotateMonsterIcon 3.5s; }
 
-.separator {
+@keyframes rotateMonsterIcon {
+  0% {
+    transform: rotate(-360deg); }
+  50% {
+    transform: rotate(360deg); } }
+
+.infoBlock-separator__separator {
   overflow: hidden;
   text-align: center;
   font-size: 30px; }
-  .separator:before {
+  .infoBlock-separator__separator:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -56,7 +66,7 @@ a, a:visited {
     position: relative;
     margin-left: -100%;
     left: -10px; }
-  .separator:after {
+  .infoBlock-separator__separator:after {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -67,46 +77,114 @@ a, a:visited {
     margin-right: -100%;
     right: -10px; }
 
-.linksList {
+.infoBlock-links__linksList {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
   color: #515e72; }
 
-.experienceList {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-  color: #515e72; }
-  .experienceList__item h3 {
-    color: #3d9ccc;
-    font-weight: 700; }
-  .experienceList__item--separate h3 {
-    color: #96c73c; }
-
-.skillsList--rounded {
+.infoBlock-experience__experienceList {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
   color: #515e72; }
 
-.skillsList--linear {
+.experienceList__item h3 {
+  color: #3d9ccc;
+  font-weight: 700; }
+
+.experienceList__item--separate h3 {
+  color: #96c73c; }
+
+.infoBlock-skills__skillsList--rounded {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #515e72; }
+
+.infoBlock-skills__skillsList--linear {
   display: inline-block; }
 
 .skillsList__item {
   color: #515e72; }
 
-.toolsList {
-  list-style-type: none; }
-  .toolsList__progressBar {
-    font-size: 1.3em;
-    color: white;
-    background-color: #eff2f5;
-    margin-bottom: 10px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px; }
+.infoBlock-tools__programList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #515e72;
+  padding-left: 15px;
+  padding-right: 5px; }
 
-.projectsList {
+.infoBlock-tools__activityList {
+  margin-top: -20px;
+  color: #515e72; }
+  .infoBlock-tools__activityList--bordered {
+    list-style-type: none;
+    border: 1px solid #eff2f5;
+    border-radius: 5px;
+    padding: 10px; }
+
+.programList__progressBar {
+  color: white;
+  background-color: #eff2f5;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 0; }
+  .programList__progressBar--blue {
+    background-color: #1ba0e1;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    max-width: 90%;
+    animation: downloadLinearPB 2s; }
+  .programList__progressBar--green {
+    background-color: #8cbf26;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    max-width: 70%;
+    animation: downloadLinearPB 2s; }
+  .programList__progressBar--purple {
+    background-color: #b664e6;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    max-width: 50%;
+    animation: downloadLinearPB 2s; }
+  .programList__progressBar--seaColor {
+    background-color: #25b9b8;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    max-width: 20%;
+    animation: downloadLinearPB 2s; }
+  .programList__progressBar--orange {
+    background-color: #f09709;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    max-width: 60%;
+    animation: downloadLinearPB 2s; }
+
+@keyframes downloadLinearPB {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+.progressBar__caption {
+  margin-left: 10px;
+  font-size: 0.8em; }
+
+.activityList__title {
+  font-size: 0.8em;
+  color: #515e72;
+  margin-bottom: 5px;
+  margin-right: 10px; }
+
+.activityList__item {
+  font-family: 'PT Sans', Arial;
+  margin-bottom: 10px; }
+  .activityList__item:last-child {
+    margin-bottom: 0; }
+
+.infoBlock-projects__projectsList {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
@@ -115,28 +193,35 @@ a, a:visited {
 .thumbnail {
   border: none; }
 
-.interestsList {
+.infoBlock-interests__interestsList {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
   color: #515e72; }
-  .interestsList img {
-    -webkit-border-radius: 10px;
-            border-radius: 10px; }
 
-.infoblock-footer {
+.interestsList__item {
+  padding-left: 0;
+  margin-left: 0; }
+
+.interestsList__caption {
+  margin-bottom: 10px; }
+
+.interestsList__img {
+  border-radius: 10px; }
+
+.infoBlock-footer {
   margin-bottom: 5%; }
-
-.infoblock-footer h2 {
-  font-family: Verdana;
-  font-style: italic; }
-
-.underlined__footer:after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #ebebeb;
-  margin-top: 5px;
-  width: 10%;
-  text-align: center;
-  margin-left: 45%; }
+  .infoBlock-footer--underlined {
+    font-family: Georgia, 'PT Sans', Arial;
+    font-style: italic;
+    color: #515e72;
+    margin-bottom: 20px; }
+    .infoBlock-footer--underlined:after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #ebebeb;
+      margin-top: 5px;
+      width: 10%;
+      text-align: center;
+      margin-left: 45%; }
