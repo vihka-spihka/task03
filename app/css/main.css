@@ -33,13 +33,18 @@ p {
   font-size: 1.0em;
   color: #515e72; }
 
-.linksList__item a {
-  color: #1594d4;
-  text-decoration: none; }
-  .linksList__item a:visited {
-    color: #1594d4; }
-  .linksList__item a:hover {
-    color: blue; }
+.linksList__item {
+  padding: 10px; }
+  .linksList__item a {
+    color: #1594d4;
+    text-decoration: none; }
+    .linksList__item a:visited {
+      color: #1594d4; }
+    .linksList__item a:hover {
+      color: blue; }
+
+.linksList__icon {
+  margin-right: 10px; }
 
 .separator__img--rotated {
   display: inline-block; }
@@ -89,12 +94,56 @@ p {
   padding-left: 0;
   color: #515e72; }
 
-.experienceList__item h3 {
-  color: #3d9ccc;
-  font-weight: 700; }
+.experienceList__item--usual {
+  padding-left: 30px;
+  position: relative; }
+  .experienceList__item--usual h3 {
+    color: #3d9ccc;
+    font-weight: 700; }
+  .experienceList__item--usual:before {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 2px #B4B7BA;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background-color: #3d9ccc; }
 
-.experienceList__item--separate h3 {
-  color: #96c73c; }
+.experienceList__item--toLifeLine:after {
+  content: "";
+  display: block;
+  height: 86px;
+  width: 6px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  box-shadow: 0 0 2px #B4B7BA;
+  position: absolute;
+  top: 15px;
+  left: 6px;
+  z-index: 1;
+  background-color: #3d9ccc; }
+
+.experienceList__item--separate {
+  padding-left: 30px;
+  position: relative; }
+  .experienceList__item--separate h3 {
+    color: #96c73c; }
+  .experienceList__item--separate:before {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 2px #B4B7BA;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background-color: #96c73c; }
 
 .infoBlock-skills__skillsList--rounded {
   list-style-type: none;
@@ -103,10 +152,179 @@ p {
   color: #515e72; }
 
 .infoBlock-skills__skillsList--linear {
-  display: inline-block; }
+  display: inline;
+  padding: 0; }
 
 .skillsList__item {
   color: #515e72; }
+
+.skillsList__fCanvas {
+  background-color: #eff2f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative; }
+
+.skillsList__sCanvas {
+  background-color: #eff2f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative; }
+
+.skillsList__tCanvas {
+  background-color: #eff2f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative; }
+
+.fCanvas {
+  background-color: #eff2f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative; }
+  .fCanvas__fLayer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip: rect(0px, 160px, 160px, 80px); }
+  .fCanvas__sLayer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip: rect(0, 80px, 160px, 0px); }
+  .fCanvas__fPart {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #1ba0e1;
+    clip: rect(0px, 80px, 160px, 0px);
+    transform: rotate(180deg); }
+  .fCanvas__sPart {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #1ba0e1;
+    clip: rect(0px, 160px, 160px, 80px);
+    transform: rotate(18deg); }
+  .fCanvas__percent {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25%;
+    padding-left: 5%;
+    border-radius: 100%;
+    font-family: 'PT Sans', Arial;
+    font-size: 3.5em;
+    text-align: center;
+    color: #515e72;
+    background: #fff; }
+
+.sCanvas {
+  background-color: #eff2f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative; }
+  .sCanvas__fLayer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip: rect(0px, 160px, 160px, 80px); }
+  .sCanvas__sLayer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip: rect(0, 80px, 160px, 0px); }
+  .sCanvas__fPart {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #1ba0e1;
+    clip: rect(0px, 80px, 160px, 0px);
+    transform: rotate(180deg); }
+  .sCanvas__sPart {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #1ba0e1;
+    clip: rect(0px, 160px, 160px, 80px);
+    transform: rotate(108deg); }
+  .sCanvas__percent {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25%;
+    padding-left: 5%;
+    border-radius: 100%;
+    font-family: 'PT Sans', Arial;
+    font-size: 3.5em;
+    text-align: center;
+    color: #515e72;
+    background: #fff; }
+
+.tCanvas {
+  background-color: #eff2f5;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative; }
+  .tCanvas__fLayer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip: rect(0px, 160px, 160px, 80px); }
+  .tCanvas__sLayer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    clip: rect(0, 80px, 160px, 0px); }
+  .tCanvas__fPart {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #1ba0e1;
+    clip: rect(0px, 80px, 160px, 0px);
+    transform: rotate(180deg); }
+  .tCanvas__sPart {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #1ba0e1;
+    clip: rect(0px, 160px, 160px, 80px);
+    transform: rotate(36deg); }
+  .tCanvas__percent {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25%;
+    padding-left: 5%;
+    border-radius: 100%;
+    font-family: 'PT Sans', Arial;
+    font-size: 3.5em;
+    text-align: center;
+    color: #515e72;
+    background: #fff; }
+
+.percent__symbol {
+  display: inline-block;
+  font-size: 0.5em;
+  vertical-align: top;
+  padding-top: 7%; }
 
 .infoBlock-tools__programList {
   list-style-type: none;
@@ -225,3 +443,45 @@ p {
       width: 10%;
       text-align: center;
       margin-left: 45%; }
+
+@media (max-width: 768px) {
+  .infoBlock {
+    margin-top: 4%; }
+  .infoBlock-aboutMe .infoBlock__title:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: #ebebeb;
+    margin-top: 5px; }
+  .infoBlock-experience .infoBlock__title:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: #ebebeb;
+    margin-top: 5px; }
+  .skillsList__item {
+    margin-top: 5%; }
+  .infoBlock-skills__skillsList--linear {
+    margin-top: 7%; }
+  .infoBlock-tools__activityList {
+    margin-top: 3%; }
+  .interestsList__item {
+    margin-top: 4%; }
+  .interestsList__caption {
+    margin-bottom: 5px; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .infoBlock {
+    margin-top: 3%; }
+  .infoBlock-title__avatar {
+    text-align: center; }
+  .infoBlock-experience {
+    padding-left: 10%; }
+  .infoBlock-tools__activityList {
+    margin-top: -20px; } }
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .infoBlock-tools__activityList {
+    margin-top: -20px; } }

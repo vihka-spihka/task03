@@ -56,6 +56,7 @@ p {
 
 .linksList {
 	&__item {
+		padding: 10px;
 		& a {
 			color: #1594d4;
 			text-decoration: none;
@@ -66,6 +67,9 @@ p {
 				color: blue;
 			}
 		}
+	}
+	&__icon {
+		margin-right: 10px;
 	}
 }
 
@@ -131,6 +135,37 @@ p {
 	}
 }
 
+@mixin timePoint {
+	content: "";
+	display: block;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	border: 2px solid white;
+	box-shadow: 0 0 2px #B4B7BA;
+	position: absolute;
+	top: 5px;
+	left: 3px;
+
+}
+
+@mixin timeLine {
+	content: "";
+	display: block;
+	height: 86px;
+	width: 6px;
+	border: {
+		left: 2px solid white;
+		right: 2px solid white;
+	}
+	box-shadow: 0 0 2px #B4B7BA;
+	position: absolute;
+	top: 15px;
+	left: 6px;
+	z-index: 1;
+
+}
+
 .infoBlock-experience {
 	&__experienceList {
 		@include ulStyled;
@@ -139,13 +174,35 @@ p {
 
 .experienceList {
 	&__item {
-		& h3 {
-			color: #3d9ccc;
-			font: { weight: 700; }
+		&--usual {
+			padding-left: 30px;
+			position: relative;
+			& h3 {
+				color: #3d9ccc;
+				font: { weight: 700; }
+			}
+			&:before {
+				@include timePoint;
+				background-color: #3d9ccc;
+			}
 		}
+
+		&--toLifeLine {
+			&:after {
+				@include timeLine;
+				background-color: #3d9ccc;
+			}
+		}
+
 		&--separate {
+			padding-left: 30px;
+			position: relative;
 			& h3 {
 				color: #96c73c;
+			}
+			&:before {
+				@include timePoint;
+				background-color: #96c73c;
 			}
 		}
 	}
@@ -157,14 +214,198 @@ p {
 			@include ulStyled;
 		}
 		&--linear {
-			display: inline-block;
+			display: inline;
+			padding: 0;
 		}
 	}
 }
 
+@mixin canvasStyle {
+	background-color: #eff2f5;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	position: relative;
+}
+
+@mixin layerStyle {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+}
+
+@mixin partStyle {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background-color: #1ba0e1;
+	//border-color: #30BAE7;
+}
+
+@mixin percentsStyle {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 150px;
+	height: 150px;
+	padding-top: 25%;
+	padding-left: 5%;
+	border-radius: 100%;
+	font-family: 'PT Sans', Arial;
+	font-size: 3.5em;
+	text-align: center;
+	color: #515e72;
+	background: #fff;
+}
+
 .skillsList {
 	&__item {
-	color: #515e72;
+		color: #515e72;
+	}
+	&__fCanvas {
+		@include canvasStyle;
+	}
+	&__sCanvas {
+		@include canvasStyle;
+	}
+	&__tCanvas {
+		@include canvasStyle;
+	}
+}
+
+$firstPartOfCircleProgress: 180;
+$secondPartOfCircleProgress: 0;
+
+.fCanvas {
+	@include canvasStyle;
+	
+	$x1: 55;
+	$perc1: ($x1/100);
+	$angle1: $perc1*360;
+
+	&__fLayer {
+		@include layerStyle;
+		clip: rect(0px, 160px, 160px, 80px);
+	}
+
+	&__sLayer {
+		@include layerStyle;
+		clip: rect(0, 80px, 160px, 0px);
+	}
+
+	&__fPart {
+		@include partStyle;
+		clip:rect(0px, 80px, 160px, 0px);
+		@if $x1 < 50 {
+			transform: rotate(#{$angle1}deg);	
+		}
+		@else {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__sPart {
+		@include partStyle;
+		clip:rect(0px, 160px, 160px, 80px);
+		@if $x1 > 50 {
+			transform: rotate(#{$angle1 - 180}deg);
+		}
+	}
+
+	&__percent {
+		@include percentsStyle;
+	}
+}
+
+.sCanvas {
+	@include canvasStyle;
+
+	$x2: 80;
+	$perc2: ($x2/100);
+	$angle2: $perc2*360;
+
+	&__fLayer {
+		@include layerStyle;
+		clip:rect(0px, 160px, 160px, 80px);
+	}
+
+	&__sLayer {
+		@include layerStyle;
+		clip:rect(0, 80px, 160px, 0px);
+	}
+
+	&__fPart {
+		@include partStyle;
+		clip:rect(0px, 80px, 160px, 0px);
+		@if $x2 < 50 {
+			transform: rotate(#{$angle2}deg);	
+		}
+		@else {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__sPart {
+		@include partStyle;
+		clip:rect(0px, 160px, 160px, 80px);
+		@if $x2 > 50 {
+			transform: rotate(#{$angle2 - 180}deg);
+		}
+	}
+
+	&__percent {
+		@include percentsStyle;
+	}
+}
+
+.tCanvas {
+	@include canvasStyle;
+
+	$x3: 60;
+	$perc3: ($x3/100);
+	$angle3: $perc3*360;
+
+	&__fLayer {
+		@include layerStyle;
+		clip:rect(0px, 160px, 160px, 80px);
+	}
+
+	&__sLayer {
+		@include layerStyle;
+		clip:rect(0, 80px, 160px, 0px);
+	}
+
+	&__fPart {
+		@include partStyle;
+		clip:rect(0px, 80px, 160px, 0px);
+		@if $x3 < 50 {
+			transform: rotate(#{$angle3}deg);	
+		}
+		@else {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__sPart {
+		@include partStyle;
+		clip:rect(0px, 160px, 160px, 80px);
+		@if $x3 > 50 {
+			transform: rotate(#{$angle3 - 180}deg);
+		}
+	}
+
+	&__percent {
+		@include percentsStyle;
+	}
+}
+
+.percent {
+	&__symbol {
+		display: inline-block;
+		font-size: 0.5em;
+		vertical-align: top;
+		padding-top: 7%;
 	}
 }
 
@@ -297,6 +538,7 @@ p {
 
 .infoBlock-footer {
 	margin-bottom: 5%;
+
 	&--underlined {
 		font: {
 			family: Georgia, 'PT Sans', Arial;
@@ -304,6 +546,7 @@ p {
 		}
 		color: #515e72;
 		margin-bottom: 20px;
+
 		&:after {
 			@include underline;
 			width:10%;
@@ -312,3 +555,100 @@ p {
 		}
 	}
 }
+
+// ----- Adatpation ----- //
+
+
+//xs-devices (< 768px)
+@media (max-width: 768px) {
+	
+	.infoBlock {
+		margin: { top: 4%; }
+	}
+
+	.infoBlock-aboutMe {
+		& .infoBlock__title:after {
+			content: "";
+			display: block;
+			height: 1px;
+			width: 60px;
+			background-color: #ebebeb;
+			margin: { top: 5px; }
+		}
+	}
+
+	.infoBlock-experience {
+		& .infoBlock__title:after {
+			content: "";
+			display: block;
+			height: 1px;
+			width: 60px;
+			background-color: #ebebeb;
+			margin: { top: 5px; }
+		}
+	}
+
+	.skillsList {
+		&__item {
+			margin-top: 5%;
+		}
+	}
+
+	.infoBlock-skills {
+	&__skillsList {
+		&--linear {
+			margin-top: 7%;
+		}
+	}
+}
+	.infoBlock-tools {
+		&__activityList {
+			margin-top: 3%;
+		}
+	}
+
+	.interestsList {
+		&__item {
+			margin-top: 4%;
+		}
+
+		&__caption {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+//sm-devices (768px-992px)
+@media (min-width: 769px) and (max-width: 992px) {
+	.infoBlock {
+		margin: { top: 3%; }
+	}
+
+	.infoBlock-title {
+		&__avatar {
+			text-align: center;
+		}
+	}
+
+	.infoBlock-experience {
+		padding-left: 10%;
+	}
+
+	.infoBlock-tools {
+		&__activityList {
+			margin-top: -20px;
+		}
+	}
+}
+
+//md-devices (992px-1200px)
+@media (min-width: 993px) and (max-width: 1200px) {
+	.infoBlock-tools {
+		&__activityList {
+			margin-top: -20px;
+		}
+	}
+}
+
+//lg-devices (>1201px)
+@media (min-width: 1200) { }

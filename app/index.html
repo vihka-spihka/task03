@@ -23,10 +23,12 @@
 	<div class="container" id="siteBody">
 		<main>
 			<div class="row">
-				<section class="col-xs-12 col-md-2 infoBlock infoBlock-title">
-					<h1><img class="img-responsive" src="img/avatar.png" alt="Avatar"></h1>
+				<section class="col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-4 col-md-2 col-md-offset-0 infoBlock infoBlock-title">
+					<h1>
+						<img class="img-responsive infoBlock-title__avatar" src="img/avatar.png" alt="Avatar">
+					</h1>
 				</section>
-				<div class="col-xs-12 col-md-6 infoBlock">
+				<div class="col-xs-12 col-sm-5 col-md-6 infoBlock">
 					<section class="row infoBlock-aboutMe">
 						<div class="col-xs-12">
 							<h2 class="infoBlock__title">Обо мне</h2>
@@ -40,31 +42,66 @@
 						</div>
 					</div>
 					<section class="row infoBlock infoBlock-links">
-						<div class="col-xs-12">
+						<div class="col-xs-9 col-xs-offset-3 col-sm-12 col-sm-offset-0">
 							<ul class="infoBlock-links__linksList">
-								<li class="linksList__item">
-									<a href="http://beliv.net" class="linksList__item--anchor" title="Go to http://beliv.net">beliv.net</a>
+								<li class="row linksList__item">
+									<div class="col-xs-1 text-right">
+										<img src="img/icon_anchor.png" alt="beliv.net icon">
+									</div>
+									<div class="col-xs-2">
+										<a href="http://beliv.net" class="linksList__item--anchor" title="Go to http://beliv.net">
+											beliv.net
+										</a>
+									</div>
 								</li>
-								<li class="linksList__item">
-									<a href="https://ru-ru.facebook.com/ivan.beloborodov" title="Go to https://ru-ru.facebook.com/ivan.beloborodov">ivan.beloborodov</a>
+								<li class="row linksList__item">
+									<div class="col-xs-1 text-right">
+										<img src="img/icon_facebook.png" alt="Facebook icon">
+									</div>
+									<div class="col-xs-2">
+										<a href="https://ru-ru.facebook.com/ivan.beloborodov" title="Go to https://ru-ru.facebook.com/ivan.beloborodov">
+											ivan.beloborodov
+										</a>
+									</div>
 								</li>
-								<li class="linksList__item">
-									<a href="https://twitter.com/@beliv" title="Go to https://twitter.com/@beliv">@beliv</a>
+								<li class="row linksList__item">
+									<div class="col-xs-1 text-right">
+										<img src="img/icon_twitter.png" alt="Twitter icon">
+									</div>
+									<div class="col-xs-2">
+										<a href="https://twitter.com/@beliv" title="Go to https://twitter.com/@beliv">
+											@beliv
+										</a>
+									</div>
 								</li>
-								<li class="linksList__item">
-									<a href="http://dribbble.com/beliv" title="Go to http://dribbble.com/beliv">dribbble.com/beliv</a>
+								<li class="row linksList__item">
+									<div class="col-xs-1 text-right">
+										<img src="img/icon_dribbble.png" alt="Dribbble icon">
+									</div>
+									<div class="col-xs-2">
+										<a href="http://dribbble.com/beliv" title="Go to http://dribbble.com/beliv">
+											dribbble.com/beliv
+										</a>
+									</div>
 								</li>
-								<li class="linksList__item">
-									<a href="http://revision.ru/a/beliv" title="Go to http://revision.ru/a/beliv">revision.ru/a/beliv</a>
+								<li class="row linksList__item">
+									<div class="col-xs-1 text-right">
+										<img src="img/icon_revision.png" alt="Revision icon">
+									</div>
+									<div class="col-xs-2">
+										<a href="http://revision.ru/a/beliv" title="Go to http://revision.ru/a/beliv">
+											revision.ru/a/beliv
+										</a>
+									</div>
 								</li>
 							</ul>
 						</div>
 					</section>
 				</div>
-				<section class="col-md-4 infoBlock infoBlock-experience">
+				<section class="col-xs-12 col-sm-7 col-md-4 infoBlock infoBlock-experience">
 					<h2 class="infoBlock__title">Опыт работы</h2>
 					<ul class="infoBlock-experience__experienceList">
-						<li class="experienceList__item">
+						<li class="experienceList__item--usual experienceList__item--toLifeLine">
 							<h3 class="infoBlock__subtitle">
 								Центр Высоких Технологий
 							</h3>
@@ -75,7 +112,7 @@
 								январь 2011 - июль 2013
 							</p>
 						</li>
-						<li class="experienceList__item">
+						<li class="experienceList__item--usual experienceList__item--toLifeLine">
 							<h3 class="infoBlock__subtitle">
 								ООО "БИТ-Мастер"
 							</h3>
@@ -86,7 +123,7 @@
 								август 2012 - июнь 2013 (внештатно)
 							</p>
 						</li>
-						<li class="experienceList__item">
+						<li class="experienceList__item--usual experienceList__item--toLifeLine">
 							<h3 class="infoBlock__subtitle">
 								Fastdev
 							</h3>
@@ -97,7 +134,7 @@
 								апрель 2012 - июнь 2012 (внештатно)
 							</p>
 						</li>
-						<li class="experienceList__item">
+						<li class="experienceList__item--usual">
 							<h3 class="infoBlock__subtitle">
 								ООО "Танго Телеком"
 							</h3>
@@ -130,33 +167,58 @@
 						</div>
 					</div>
 					<ul class="row infoBlock-skills__skillsList--rounded">
-						<li class=" col-md-3 col-md-offset-1 skillsList__item">
+						<li class="col-xs-12 col-sm-6 col-md-4 skillsList__item">
 							<h3 class="infoBlock__subtitle text-center">User Experience</h3>
 							<p class="dateStyle text-center">с 2010 года</p>
-							<div style="width:200px;display:inline;&quot;"><canvas width="200" height="200"><input class="knob" data-fgcolor="chartreuse" data-thickness=".4" data-readonly="true" value="22" readonly="readonly" style="width: 100px; position: absolute; margin-top: 71.4286px; margin-left: -150px; font-size: 50px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: chartreuse; padding: 0px; -webkit-appearance: none;"></div>
-							</canvas>
+							<div class="skillsList__fCanvas center-block">
+								<div class="fCanvas__fLayer">
+									<div class="fCanvas__fPart"></div>
+								</div>
+								<div class="fCanvas__sLayer">
+									<div class="fCanvas__sPart"></div>
+								</div>
+								<div class="fCanvas__percent">55<span class="percent__symbol">%</span></div>
+							</div>
 						</li>
-						<li class="col-md-5 skillsList__item">
+						<li class="col-xs-12 col-sm-6 col-md-4 skillsList__item">
 							<h3 class="infoBlock__subtitle text-center">Дизайн мобильных интерфейсов</h3>
 							<p class="dateStyle text-center">с 2011 года</p>
+							<div class="skillsList__sCanvas center-block">
+								<div class="sCanvas__fLayer">
+									<div class="sCanvas__fPart"></div>
+								</div>
+								<div class="sCanvas__sLayer">
+									<div class="sCanvas__sPart"></div>
+								</div>
+								<div class="sCanvas__percent">80<span class="percent__symbol">%</span></div>
+							</div>
 						</li>
-						<li class="col-md-3 skillsList__item">
+						<li class="col-xs-12 col-sm-12 col-md-4 skillsList__item">
 							<h3 class="infoBlock__subtitle text-center">Веб-интерфейсы</h3>
 							<p class="dateStyle text-center">с 2010 года</p>
+							<div class="skillsList__tCanvas center-block">
+								<div class="tCanvas__fLayer">
+									<div class="tCanvas__fPart"></div>
+								</div>
+								<div class="tCanvas__sLayer">
+									<div class="tCanvas__sPart"></div>
+								</div>
+								<div class="tCanvas__percent">60<span class="percent__symbol">%</span></div>
+							</div>
 						</li>
 					</ul>
-					<ul class="row infoBlock-skills__skillsList-linear">
-						<div class="col-md-3">
+					<ul class="row infoBlock infoBlock-skills__skillsList--linear">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 							<li class="skillsList__item">Базовые знания HTML &amp; CSS</li>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 							<li class="skillsList__item">Клубный фотограф</li>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 							<li class="skillsList__item">Интерфейсы для Smart TV</li>
 						</div>
-						<div class="col-md-3">
-							<li class="skillsList__item">7 проектов в сыере такси за 3 года</li>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<li class="skillsList__item">7 проектов в сфере такси за 3 года</li>
 						</div>
 					</ul>
 				</div>
@@ -169,9 +231,8 @@
 							<h2 class="infoBlock__title underlined">Инструменты</h2>
 						</div>
 					</div>
-					
 					<div class="row">
-						<div class="col-md-7">
+						<div class="col-xs-12 col-sm-7">
 							<ul class="infoBlock-tools__programList">
 								<li class="row">
 									<div class="col-xs-12 programList__progressBar">
@@ -210,8 +271,7 @@
 								</li>
 							</ul>
 						</div>
-
-						<div class="col-md-5 infoBlock-tools__activityList">
+						<div class="col-xs-12 col-sm-5 infoBlock-tools__activityList">
 							<div class="activityList__title text-right">Активность</div>
 							<ul class="infoBlock-tools__activityList--bordered">
 								<li class="row activityList__item">
@@ -250,28 +310,28 @@
 						<h2 class="col-md-12 infoBlock__title underlined">Последние проекты</h2>
 					</div>
 					<ul class="row infoBlock-projects__projectsList">
-						<li class="col-md-3 projectsList__item thumbnail">
+						<li class="col-xs-12 col-sm-6 col-md-3 projectsList__item thumbnail">
 							<div class="caption">
 								<h3 class="infoBlock__subtitle text-center">TaxiCaller</h3>
 								<p class="dateStyle text-center">декабрь 2012 - март 2013</p>
 							</div>
 							<img class="img-responsive" src="img/projects_taxiCaller.png" alt="Проект TaxiCaller">
 						</li>
-						<li class="col-md-3 projectsList__item thumbnail">
+						<li class="col-xs-12 col-sm-6 col-md-3 projectsList__item thumbnail">
 							<div class="caption">
 								<h3 class="infoBlock__subtitle text-center">Check, please!</h3>
 								<p class="dateStyle text-center">май 2013 - ...</p>
 							</div>
 							<img class="img-responsive" src="img/projects_checkPlease.png" alt="Проект Check, please!">
 						</li>
-						<li class="col-md-3 projectsList__item thumbnail">
+						<li class="col-xs-12 col-sm-6 col-md-3 projectsList__item thumbnail">
 							<div class="caption">
 								<h3 class="infoBlock__subtitle text-center">Izhevsk.ru</h3>
 								<p class="dateStyle text-center">ноябрь 2012 - февраль 2013</p>
 							</div>
 							<img class="img-responsive" src="img/projects_izhevsk.png" alt="Проект Izhevsk.ru">
 						</li>
-						<li class="col-md-3 projectsList__item thumbnail">
+						<li class="col-xs-12 col-sm-6 col-md-3 projectsList__item thumbnail">
 							<div class="caption">
 								<h3 class="infoBlock__subtitle text-center">RP.com <img src="img/scull.png" alt="Dead project"></h3>
 								<p class="dateStyle text-center">июнь 2012 - март 2013</p>
@@ -287,19 +347,19 @@
 						<h2 class="col-md-12 infoBlock__title underlined">Интересы</h2>
 					</div>
 					<ul class="row infoBlock-interests__interestsList">
-						<li class="col-md-3 interestsList__item">
+						<li class="col-xs-12 col-sm-6 col-md-3 interestsList__item">
 							<div class="interestsList__caption">Музыка</div>
 							<img class="img-respinsive interestsList__img" src="img/interests_music.jpg" alt="Музыка">
 						</li>
-						<li class="col-md-3 interestsList__item">
+						<li class="col-xs-12 col-sm-6 col-md-3 interestsList__item">
 							<div class="interestsList__caption">Мотоциклы</div>
 							<img class="img-respinsive interestsList__img" src="img/interests_motorbike.jpg" alt="Мотоцикл">
 						</li>
-						<li class="col-md-3 interestsList__item">
+						<li class="col-xs-12 col-sm-6 col-md-3 interestsList__item">
 							<div class="interestsList__caption">Кулинария</div>
 							<img class="img-respinsive interestsList__img" src="img/interests_cookery.jpg" alt="Кулинария">
 						</li>
-						<li class="col-md-3 interestsList__item">
+						<li class="col-xs-12 col-sm-6 col-md-3 interestsList__item">
 							<div class="interestsList__caption">Велоспорт</div>
 							<img class="img-respinsive interestsList__img" src="img/interests_bicycle.jpg" alt="Велосипед">
 						</li>
